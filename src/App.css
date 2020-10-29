@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f2f2f2;
+}
+.cartItem {
+  box-shadow: 0 1px 5px rgb(0, 0, 0, 0.5);
+  background-color: white;
+  width: fit-content;
+  overflow: hidden;
+  /* z-index: -1000; */
+}
+.cartItem {
+  position: relative;
+  transition: transform 100ms linear;
+}
+.cartItem:hover {
+  transform: scale(1.02);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.discountLogo {
   color: white;
+  background-color: green;
+}
+.searchItemholder {
+  width: fit-content;
+  border-radius: 12px;
+  position: sticky;
+  top: 70px;
+  z-index: 10000;
 }
 
-.App-link {
-  color: #61dafb;
+.searchBar {
+  z-index: 1000;
+  width: 40%;
+  opacity: 0.7;
+  transition: width 300ms, opacity 300ms ease-in-out;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchBar:focus {
+  width: 50%;
+  opacity: 1;
 }
