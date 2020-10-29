@@ -1,4 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+its a react-shopping-cart or add to basket project just like any other shopping website.
+This project will have the following phases and probably more:
+1)add to basket
+2)intergrated payment system like paypal e.t.c.
+3)remove cart item
+4)Log in either with :
+i)Google
+ii)facebook
+iii)manual login with the sites registering form then Login.
+and many more steps to be updated with time.
 
 ## Available Scripts
 
